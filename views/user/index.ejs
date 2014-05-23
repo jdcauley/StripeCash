@@ -46,22 +46,11 @@
     <input type="text" size="4" data-stripe="exp-year"/>
   </div>
 
-  <button type="submit">Submit Payment</button>
+  <button type="submit">Add Card</button>
 </form>
 <hr>
 <form action="/charge" method="post">
   <input type="hidden" value="<%= user.id %>" name="user">
-  <input type="submit" value="Charge the Customer" class="btn btn-lg btn-primary btn-block">
-</form>
-<hr>
-<a href="https://connect.stripe.com/oauth/authorize?response_type=code&client_id=ca_3sLBbFQLGuENf9ZQstG6kAmNUjkVsaIJ&scope=read_write&state=1234" class="btn btn-default">Connect to Stripe</a>
-
-<hr>
-
-<form action="/invoice/create" method="post">
-  <input type="text" name="title" value="" placeholder="Invoice Title">
-  <input type="email" name="email" value="" placeholder="Payor Email">
-  <input type="text" name="name" value="" placeholder="Payor Name">
   <input type="submit" value="Charge the Customer" class="btn btn-lg btn-primary btn-block">
 </form>
 

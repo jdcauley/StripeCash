@@ -1,10 +1,14 @@
 # Stripe Cash
 
+Notes about this project:
+
 This Application works but you should not use it in production.
 
 The processes used are of questionable legality, this project was a Can I without a Should I.
 
 So play with it in test mode but I strongly advise against using it to process funds.
+
+I have also not implmented the process of sending money via email, current sending funds takes place via the rudimentary gui.
 
 ## Installation
 
